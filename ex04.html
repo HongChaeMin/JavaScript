@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="alert-box" class="alert-box">
+            Alert 박스
+            <button onclick="alertOn('none');">닫기</button>
+        </div>
+        <button onclick="alertOn('block');">버튼</button>
+        
+    </body>
+    <script>
+        
+        function alertOn(gumung) {
+            document.getElementById('alert-box').style.display = gumung;
+        }
+        
+    </script>
+</html>

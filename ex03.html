@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="alert-box" class="alert-box">
+            Alert 박스
+            <button onclick="document.getElementById('alert-box').style.display = 'none'">닫기</button>
+        </div>
+        <button onclick="btnOn();">버튼</button>
+        
+    </body>
+    <script>
+        
+        // function을 쓰면 긴 코드를 깔끔하게 한 단어로 축약 가능
+        function btnOn() {
+            document.getElementById('alert-box').style.display = 'block';
+        }
+        
+        // + 변경할 HTML이 있으면 하단에 JS 코딩 해야됨
+        // + 오타 찾기
+        
+    </script>
+</html>

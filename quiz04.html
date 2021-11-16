@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="idAlert" class="alert-box">
+            아이디를 입력 안하셨어요...
+            <button onclick="alertOn('idAlert', 'none');">닫기</button>
+        </div>
+        <div id="pwAlert" class="alert-box">
+            비밀번호를 입력 안하셨어요...
+            <button onclick="alertOn('pwAlert', 'none');">닫기</button>
+        </div>
+        <button onclick="alertOn('idAlert', 'block');">버튼1</button>
+        <button onclick="alertOn('pwAlert', 'block');">버튼2</button>
+        
+    </body>
+    <script>
+        
+        function alertOn(id, display) {
+            document.getElementById(id).style.display = display;
+        }
+        
+    </script>
+</html>
